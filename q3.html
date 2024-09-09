@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        var img_crea=document.createElement("img");
+        img_crea.src="./bulbon.jpg";
+        img_crea.style.width="300px";
+        img_crea.style.height="300px";
+        document.body.style.backgroundColor="red";
+        
+        img_crea.addEventListener("mouseover",hover);
+        function hover(){
+           img_crea.style.transform="skewX(-30deg)";
+        }
+        img_crea.addEventListener("mouseout",out);
+        function out(){
+           img_crea.style.transform="skewX(0deg)";
+        }
+        document.body.append(img_crea);
+    </script>
+</body>
+</html>

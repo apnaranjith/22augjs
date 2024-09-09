@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="id1">ON</button>
+    <button id="id2">OFF</button>
+    <script>
+         var img_cre=document.createElement("img");
+     var on_btn=document.getElementById("id1");
+     on_btn.addEventListener("click",()=>{
+       
+        img_cre.src="./bulbon.jpg";
+        img_cre.style.height="200px";
+        img_cre.style.width="200px";
+        img_cre.style.display="block";
+        document.body.append(img_cre);
+
+     })
+     var off_btn=document.getElementById("id2");
+     off_btn.addEventListener("click",()=>{
+       
+        img_cre.src="./bulboff.jpeg";
+        img_cre.style.height="200px";
+        img_cre.style.width="200px";
+        img_cre.style.display="block";
+        document.body.append(img_cre);
+
+     })
+    </script>
+</body>
+</html>
